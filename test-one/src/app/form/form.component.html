@@ -1,0 +1,46 @@
+<div >
+    <mat-card  class="card">
+        <mat-card-title class="card-title">Form</mat-card-title>
+        <mat-divider></mat-divider>
+        <mat-card-content class="card-content">
+            <form class="example-form">
+                <mat-grid-list cols="2" rowHeight="8:1">
+                    <mat-grid-tile>
+                      <mat-form-field class="example-full-width">
+                        <input matInput placeholder="First Name" value="Rajat">
+                    </mat-form-field>
+                  </mat-grid-tile>
+                    <mat-grid-tile>
+                      <mat-form-field class="example-full-width">
+                        <input matInput placeholder="First Name" value="gupt">
+                    </mat-form-field>
+                  </mat-grid-tile>
+                  </mat-grid-list>
+
+                <h4>Select a gender</h4>
+                <mat-radio-group aria-label="Select a gender">
+                    <mat-radio-button value="1">Male</mat-radio-button>
+                    <mat-radio-button value="2">Female</mat-radio-button>
+                </mat-radio-group>
+                <h4>Select Nineleaps Office</h4>
+                <mat-form-field>
+                    <select matNativeControl required autocomplete="true">
+                        <option value="roush">Roush</option>
+                        <option value="ccd">CCD</option>
+                        <option value="pasta">Pasta</option>
+                        <option value="svc">SVC</option>
+                        <option value="main">Main Building</option>
+                    </select>
+                </mat-form-field>
+                <h4>How many miles you want to run</h4>
+                <mat-slider thumbLabel [displayWith]="formatLabel" tickInterval="5" min="1" max="30"></mat-slider>
+                <mat-form-field>
+                    <input matInput [matDatepicker]="picker" placeholder="Date of Birth">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+               
+            </form>
+        </mat-card-content>
+    </mat-card>
+ </div>

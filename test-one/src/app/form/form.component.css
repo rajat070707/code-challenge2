@@ -1,0 +1,26 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+.example-full-width {
+  width: 100%;
+  align-content: center;
+}
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}
+.mat-slider {
+  width: 300px;
+}
+.card{
+    max-width: 400px;
+    box-shadow: 50px,50px;
+    padding: 7%;
+}
+.card-title{
+    text-align: center;
+}
+.card-content{
+  padding-top: 5%;
+}
